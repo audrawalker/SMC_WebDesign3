@@ -1,0 +1,377 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Highly Likely</title>
+    <style>
+        .collapse {
+            width:70px;
+        }
+        
+        .table-striped>tbody>tr:nth-child(2n+1)>td,
+        .table-striped>tbody>tr:nth-child(2n+1)>th {
+            background-color: rgb(245, 237, 233);
+        }
+
+        th {
+            color: rgb(245, 182, 146);
+        }
+
+        .btn2 {
+            margin-bottom: 20px;
+            color: rgb(245, 182, 146);
+            background-color: transparent;
+            border: 2px solid rgb(245, 182, 146);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .text {
+            color: rgb(245, 182, 146)
+        }
+
+        .featurette-heading {
+            font-size: 50px;
+        }
+
+        .navbar {
+            background-color: rgb(245, 182, 146);
+        }
+
+        .jumbotron {
+            background-size: cover;
+            background-position: center;
+            background-image: url(file:///Users/annawalker/Desktop/SMC_WebDesign3/Week%203%20Homework/assets/highly_likely.jpg);
+
+        }
+
+        .display-4 {
+            font-size: 90px;
+        }
+
+        .lead {
+            font-size: 40px;
+        }
+
+        .lowest {
+            font-size: 20px;
+        }
+
+        a.btn:hover {
+            color: white;
+            background-color: rgb(245, 182, 146);
+        }
+
+        .btn2:hover {
+            background-color: rgb(245, 182, 146);
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn {
+            color: white;
+        }
+
+        .fa-facebook {
+            color: white;
+            padding: 10px;
+            padding-left: 0px;
+        }
+
+        .fa-twitter {
+            color: white;
+            padding: 10px;
+        }
+
+        .fa-instagram {
+            color: white;
+            padding: 10px;
+        }
+
+        .col-sm {
+            padding-right: 0px;
+            position: relative;
+            padding-left: 0px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: white;
+
+        }
+
+        .search-form .form-group {
+            float: left !important;
+            transition: all 0.35s, border-radius 0s;
+            width: 32px;
+            height: 32px;
+            background-color: #fff;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+        }
+
+        .search-form .form-group input.form-control {
+            padding-right: 20px;
+            border: 0 none;
+            background: transparent;
+            box-shadow: none;
+            display: block;
+        }
+
+        .search-form .form-group input.form-control::-webkit-input-placeholder {
+            display: none;
+        }
+
+        .search-form .form-group input.form-control:-moz-placeholder {
+            /* Firefox 18- */
+            display: none;
+        }
+
+        .search-form .form-group input.form-control::-moz-placeholder {
+            /* Firefox 19+ */
+            display: none;
+        }
+
+        .search-form .form-group input.form-control:-ms-input-placeholder {
+            display: none;
+        }
+
+        .search-form .form-group:hover,
+        .search-form .form-group.hover {
+            width: 50%;
+            border-radius: 4px 25px 25px 4px;
+        }
+
+        .search-form .form-group span.form-control-feedback {
+            position: absolute;
+            top: -1px;
+            z-index: 2;
+            display: block;
+            width: 31px;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+            color: rgb(245, 182, 146);
+            left: initial;
+            font-size: 14px;
+        }
+    </style>
+
+    <!-- Nav start -->
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-expand-md navbar-light ">
+        <a class="navbar-brand text-white" href="#">Highly Likely</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Catering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Order Online</a>
+                </li>
+            </ul>
+            <!-- Search start -->
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm ">
+                        <form action="" class="search-form">
+                            <div class="form-group has-feedback">
+                                <label for="search" class="sr-only"></label>
+                                <input type="text" class="form-control" name="search" id="search" placeholder="">
+                                <span class="fa fa-search form-control-feedback"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Search end -->
+            <!-- Social Link start -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <!-- Social Link end -->
+        </div>
+    </nav>
+</head>
+<!-- Nav end -->
+
+<body>
+    <!-- Jumbotron start -->
+    <div class="jumbotron jumbotron-fluid"
+        style="background-image: url(file:///Users/annawalker/Desktop/SMC_WebDesign3/Week%203%20Homework/assets/highly_likely.jpg);">
+        <div class="container">
+            <h1 class="display-4 text-light">Highly Likely</h1>
+            <p class="lead text-light ">Located in West Adams and serving the best coffee, eats, beer and wine.</p>
+            <hr class="my-4">
+            <p class="lead">
+                <a class="btn btn-outline-light btn-lg" href="#" role="button">Check Out the Menu</a>
+            </p>
+        </div>
+    </div>
+    <!-- Jumbotron end -->
+    <!-- START THE FEATURETTES -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Who we are <span class="text">and what we believe in</span></h2>
+                <p class="lead">We founded Highly Likely in 2010 as a family: Anya & Yasha Michelson,
+                    a husband-and-wife design team, along with our daughter, Marina, a filmmaker and actor.
+                    Over the last 10 years, we have proudly extended our family to include a fantastic team of
+                    aristas, servers, cooks, and dishwashers, and a community of regular customers.
+
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="col-sm col-md">
+                    <picture>
+                        <img src="assets/owner.jpg" alt="Highly Likely Owner">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Events <span class="text"> we like to party</span></h2>
+                <p class="lead">What can we say — we love to host! Pop-up trucks, guest chefs, Sunday Suppers,
+                    and more. Check out the our events schedule to ensure you don’t get FOMO anytime soon.</p>
+                <button type="button" class="btn2 btn-outline-dark btn-lg">Check Out Upcoming Events</button>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="assets/events_tasting.jpg">
+                    <source media="(min-width:768px)" srcset="assets/events_tasting.jpg">
+                    <img src="assets/events_poetry.jpg" alt="coffee tasting">
+                </picture>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Our Menu <span class="text"> A secret look into our delicious eats and
+                        drinks</span></h2>
+                <p class="lead">We have it all from eggs benedict to nacho fries. Our coffee is proudly roasted by
+                    Highly Likely, with feature roasts from Elm Coffee Roasters, Black Oak and Coava.</p>
+            </div>
+            <div class="col-md-5">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="assets/food_1.jpg">
+                    <source media="(min-width:768px)" srcset="assets/food_2.jpg">
+                    <img src="assets/food_1.jpg" alt="coffee tasting">
+                </picture>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">COFFEE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Espresso </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Americano </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Cappuccino </td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Latte (Hot or Iced) </td>
+                <td>4.50</td>
+            </tr>
+            <tr>
+                <td>Coffee </td>
+                <td>2.75</td>
+            </tr>
+            <tr>
+                <td>Cold Brew </td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table teas table-striped">
+        <thead>
+            <tr>
+                <th scope="col">TEAS (HOT OR ICED)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hibiscus Lemongrass </td>
+                <td>4.25</td>
+            </tr>
+            <tr>
+                <td>Green Genmaicha </td>
+                <td>4.25</td>
+            </tr>
+            <tr>
+                <td>Ooling Marigold </td>
+                <td>4.25</td>
+            </tr>
+            <tr>
+                <td>Mint Basil </td>
+                <td>4.25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
