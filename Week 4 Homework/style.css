@@ -1,0 +1,50 @@
+
+.container p{
+    font-family: 'Josefin Slab', serif;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.container h1 {
+    font-family: 'Fredericka the Great', cursive;
+    color: #99AABF;
+    font-size: 65px;
+}
+.navbar {
+    background-color: #F2BC8D;
+}
+.navbar-brand {
+    color: whitesmoke;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(https://image.flaticon.com/icons/svg/29/29302.svg);
+}
+a{
+    font-family: 'Josefin Slab', serif;
+}
+.collapse button {
+    color: white;
+    border-color: white;
+    font-family: 'Josefin Slab', serif;
+}
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+}
+.btn-outline-light {
+    color: #F2BC8D;
+    background-color: #F2BC8D;
+}
+img {
+    width: 100%;
+}
+h5 {
+    font-family: 'Fredericka the Great', cursive;
+    color: #99AABF;
+    font-size: 40px;
+}
+.card {
+    margin: 10px;
+}
