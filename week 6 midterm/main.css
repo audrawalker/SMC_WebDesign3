@@ -1,0 +1,42 @@
+.card-deck {
+  margin-top: 30px;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.jumbotron {
+  background-size: cover;
+  background-position: top;
+  background-image: url(https://nebula.wsimg.com/6f09271c6b26490556a4f5e214c26443?AccessKeyId=9B47CC8F79820E0096EE&disposition=0&alloworigin=1);
+}
+
+.featurette-heading .text{
+  color: #5698b9;
+}
+.btn {
+  background-color: #5698b9;
+  color: white;
+}
+a {
+  color: #5698b9;
+}
+#title h5{
+  color:  #5698b9;
+}
+
+.carousel-caption {
+  top: 23%;
+}
