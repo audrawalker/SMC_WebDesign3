@@ -11,16 +11,30 @@
   user-select: none;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
+
 
 .jumbotron {
   background-size: cover;
-  background-position: top;
-  background-image: url(https://nebula.wsimg.com/6f09271c6b26490556a4f5e214c26443?AccessKeyId=9B47CC8F79820E0096EE&disposition=0&alloworigin=1);
+  background-position: bottom;
+  background-image: url(https://images.wallpaperscraft.com/image/plane_hand_sky_80661_1920x1080.jpg);
+}
+.jumbotron p{
+  color: black;
+  margin-bottom: 0px;
+  
+}
+.jumbotron h1 {
+  margin-top:30px;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    
+  }
+  .jumbotron {
+    background-position: center;
+  }
+
 }
 
 .featurette-heading .text{
@@ -39,4 +53,17 @@ a {
 
 .carousel-caption {
   top: 23%;
+}
+main{
+  background-color: #dae4f0;
+}
+.alert {
+  background-color: #335075;
+  color: white;
+}
+.alert a {
+  color: #102e3d;
+}
+.carousel-inner img{
+  filter: contrast(.7);
 }

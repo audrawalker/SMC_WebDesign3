@@ -32,16 +32,20 @@
                         <a class="nav-link" href="about.html">About Us </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="airfreight.html">Air Freight <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="airfreight.html">Air Freight <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="team.html">Our Team</a>
                     </li>
 
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+
+            </div>
+            <div class="alert bg-primary text-right alert-dismissible fade show" role="alert">
+                Click here to <a href="airfreight.html" class="alert-link">Get a Quote</a>.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
         </nav>
         <!--Nav end-->
@@ -50,7 +54,7 @@
         <!--Jumbotron start-->
         <div class="jumbotron">
             <h1 class="display-4 text-light font-weight-bold">Air Freight</h1>
-            <p class="text-dark font-weight-bold col-md-5 col-lg-5 p-0">Ready to start shipping?
+            <p class="text font-weight-bold col-md-5 col-lg-4 p-0">Ready to start shipping?
                 We've got an abundance of services
                 to cater to all your cargo needs.</p>
         </div>
@@ -68,7 +72,7 @@
                                 shipping your cargo, enquire about availability or calculate the CO2 emissions of fuel
                                 surcharge tiers on your shipment, our wide range of services have got you covered.</p>
                         </div>
-                        
+
                     </div>
 
                     <hr class="featurette-divider">
@@ -76,7 +80,8 @@
                     <div class="row featurette">
                         <div class="col-md-7 order-md-2">
                             <h2 class="featurette-heading">Your Benefits <span class="text-muted"></span></h2>
-                            <p class="lead">Our global air freight teams, located in more than 300 offices worldwide, are
+                            <p class="lead">Our global air freight teams, located in more than 300 offices worldwide,
+                                are
                                 always available to advise you. Their specialised, industry-focused approach will make
                                 certain your air cargo travels the safest, speediest and most cost-effective way
                                 possible.
@@ -89,7 +94,7 @@
                                 face in today’s dynamic production and service environments. Talk to us today, and let
                                 us start thinking of new ways to make your air cargo movements more effective.</p>
                         </div>
-                        
+
                     </div>
 
                     <hr class="featurette-divider">
@@ -103,7 +108,7 @@
                                 Standardised IT and operational systems
                                 Cargo iQ planning and monitoring standards applied to each shipment.</p>
                         </div>
-                        
+
                     </div>
 
                     <hr class="featurette-divider">
@@ -117,12 +122,7 @@
 
 
     </main>
-    <div class="alert fixed-bottom alert-secondary alert-dismissible fade show" role="alert">
-        Click here to <a href="index.html" class="alert-link">Get a Quote</a>. 
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4">
 
@@ -243,22 +243,107 @@
 
     </footer>
     <!-- Footer -->
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request a Quote</h5>
+
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <p class="text-muted p-3 mb-0">Fill out the below fields to receive your competitive rate quote today.
+                    A representative from the Silver Pelegrine Industries Team should respond within 60 minutes.</p>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="modal-body mx-3 p-0">
+                            <div class="md-form mb-4">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form3" class="form-control validate" placeholder="Jane Doe"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid name.
+                                </div>
+                                <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                            </div>
+                            <div class="md-form mb-4">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form3" class="form-control validate" placeholder="United States"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid country.
+                                </div>
+                                <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                            </div>
+                        
+                            <div class="md-form mb-4">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form3" class="form-control validate" placeholder="Finland"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid country.
+                                </div>
+                                <label data-error="wrong" data-success="right" for="form3">Country To</label>
+                            </div>
+                            <div class="md-form mb-4">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form3" class="form-control validate" placeholder="janedoe@gmail.com"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Email.
+                                </div>
+                                <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                            </div>
+
+                           
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Get a Quote</button>
+                </div>
+            </div>
+            </form>
+        </div>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script src="script.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <script src="script.js"></script>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+
 </body>
 
 </html>
