@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+header {
+    background: #55d6aa;
+    background-image: linear-gradient(#55d6aa, #ec6f66);
+    width: 300px;
+    height: 100px;
+    transition: width 2s;
+}
+header:hover {
+    width: 100%;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding-top: 20px;
+    float: right;
+    text-align: center;
+    
+    list-style: none;
+}
+nav li {
+    padding-right: 15px;
+    display: inline-block;
+    margin-left: 20px;
+ 
+}
+h1 {
+    padding-top: 20px;
+    color: white;
+    float: left;
+    font-size: 25px;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+nav a {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+main {
+    position: absolute;
+   
+}
+h2 {
+    font-size: 16px;
+    color: #ec6f66;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    position: relative;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.translate div {
+    width: 200px;
+    height: 200px;   
+}
+
+.translate .translated:active {
+    transform: translate(200px, -200px);
+}
+.translate .translated2 {
+    transform: translate(200px, -200px);
+}
+.translate .translated2 {
+    transform: translate(200px, -200px) rotate(90deg);
+}
+.translate .translated2:active {
+    transform: translate(200px, -200px) rotate(0deg);
+}
+img {
+    width: 200px;
+    height: 200px;
+}
