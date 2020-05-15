@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+    <style>
+        #redButton {
+            background-color: red;
+        }
+
+        #blueButton {
+            background-color: blue;
+        }
+
+        #yellowButton {
+            background-color: yellow;
+        }
+
+        #greenButton {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="clickCounter">Number of Clicks: 0</h3>
+    <button id="redButton">Click for Red</button>
+    <button id="blueButton">Click for Blue</button>
+    <button id="yellowButton">Click for Yellow</button>
+    <button id="greenButton">Click for Green</button>
+    <canvas id="myCanvas" width="800" height="600">
+        Please use a browser that supports HTML canvas.
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+
+        var ballColor = 'rgba(130, 105, 170)';
+        var ballPosX = canvas.width / 2;
+        var ballPosY = canvas.height / 2;
+        var ballRadius = 50;
+
+        var ballSpeedX = 3;
+        var ballSpeedY = 2;
+
+        var animate = function () {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            context.fillStyle = ballColor;
+            context.beginPath();
+            context.arc(ballPosX, ballPosY, ballRadius, 0, 2 * Math.PI)
+            context.fill();
+
+            if ((ballPosX + ballRadius >= canvas.width) || (ballPosX - ballRadius) <= 0) {
+                ballSpeedX = ballSpeedX * -1;
+            }
+
+            if ((ballPosY + ballRadius >= canvas.height) || (ballPosY - ballRadius <= 0)) {
+                ballSpeedY = ballSpeedY * -1;
+            }
+
+            ballPosX = ballPosX + ballSpeedX;
+            ballPosY = ballPosY + ballSpeedY;
+
+            window.requestAnimationFrame(animate);
+        }
+
+        animate();
+        canvas.addEventListener("click", function (event) {
+
+            var distX = Math.abs(ballPosX - event.offsetX);
+            var distY = Math.abs(ballPosY - event.offsetY);
+
+            if (distX < ballRadius && distY < ballRadius) {
+                ballSpeedX = 8
+            }
+
+        });
+
+        var button = document.getElementById("clickCounter"),
+            count = 0;
+        canvas.onclick = function () {
+            var distX = Math.abs(ballPosX - event.offsetX);
+            var distY = Math.abs(ballPosY - event.offsetY);
+            if (distX < ballRadius && distY < ballRadius) {
+                count += 1;
+                button.innerHTML = "Number of Clicks: " + count;
+
+            }
+        }
+
+        redButton.addEventListener("click", function (event) {
+            ballColor = 'red';
+        });
+        blueButton.addEventListener("click", function (event) {
+            ballColor = 'blue';
+        });
+        yellowButton.addEventListener("click", function (event) {
+            ballColor = 'yellow';
+        });
+        greenButton.addEventListener("click", function (event) {
+            ballColor = 'green';
+        });
+    </script>
+
+</body>
+
+</html>
