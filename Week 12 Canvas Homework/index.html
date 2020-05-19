@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Canvas</title>
     <style>
+        #clickCounter {
+            margin-bottom: 5px;
+            margin-top: 0px;
+            font-variant-caps: all-small-caps;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+            margin-top: 0px;
+            height: 30px;
+            color: white;
+            font-variant-caps: all-small-caps;
+        }
+
         #redButton {
             background-color: red;
         }
@@ -14,22 +28,25 @@
             background-color: blue;
         }
 
-        #yellowButton {
-            background-color: yellow;
+        #blackButton {
+            background-color: black;
         }
 
         #greenButton {
             background-color: green;
         }
     </style>
+
 </head>
 
 <body>
-    <h3 id="clickCounter">Number of Clicks: 0</h3>
-    <button id="redButton">Click for Red</button>
-    <button id="blueButton">Click for Blue</button>
-    <button id="yellowButton">Click for Yellow</button>
-    <button id="greenButton">Click for Green</button>
+    <section>
+        <h3 id="clickCounter">Number of Clicks: 0</h3>
+        <button id="redButton">Click for Red</button>
+        <button id="blueButton">Click for Blue</button>
+        <button id="blackButton">Click for Black</button>
+        <button id="greenButton">Click for Green</button>
+    </section>
     <canvas id="myCanvas" width="800" height="600">
         Please use a browser that supports HTML canvas.
     </canvas>
@@ -75,7 +92,7 @@
             var distY = Math.abs(ballPosY - event.offsetY);
 
             if (distX < ballRadius && distY < ballRadius) {
-                ballSpeedX = 8
+                ballSpeedX = ballSpeedX + 8
             }
 
         });
@@ -98,8 +115,8 @@
         blueButton.addEventListener("click", function (event) {
             ballColor = 'blue';
         });
-        yellowButton.addEventListener("click", function (event) {
-            ballColor = 'yellow';
+        blackButton.addEventListener("click", function (event) {
+            ballColor = 'black';
         });
         greenButton.addEventListener("click", function (event) {
             ballColor = 'green';
