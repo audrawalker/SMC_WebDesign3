@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hello, WebVR! • A-Frame</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame" />
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-sky color="#DDDDDD"></a-sky>
+    <a-light type="directional" color="#FFF" intensity="0.5" position="-1 1 2"></a-light>
+    <a-light type="ambient" color="#FFF"></a-light>
+    <a-camera position="0 1 4" cursor-visible="true" cursor-scale="2" cursor-color="#0095DD" cursor-opacity="0.5"></a-camera>
+    <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+      <a-sphere position="5 0 0" color="#7BC8A4"></a-sphere>
+</a-entity>
+  </a-scene>
+<script>
+    var scene = document.querySelector('a-scene');
+    var cylinder = document.createElement('a-cylinder');
+    cylinder.setAttribute('color', '#FF9500');
+    cylinder.setAttribute('height', '2');
+    cylinder.setAttribute('radius', '0.75');
+    cylinder.setAttribute('position', '3 1 0');
+    scene.appendChild(cylinder);
+    var t = 0;
+    var box = document.createElement('a-box');
+    box.setAttribute('color', '#EF2D5E');
+    box.setAttribute('height', '5');
+    box.setAttribute('radius', '0.75');
+    box.setAttribute('position', '-3 1 4');
+    scene.appendChild(box);
+    function render() {
+      t += 0.01;
+      requestAnimationFrame(render);
+      cylinder.setAttribute('position', '3 '+(Math.sin(t*2)+1)+' 0');
+      box.setAttribute('position', '0 '+(Math.sin(t*4)+1)+' 0');
+
+    };
+    render();
+</script>
+</body>
+
+
+</html>
