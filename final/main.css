@@ -1,0 +1,107 @@
+.navbar-toggler{
+    color: #F2C53D !important;
+    border: 0px;
+}
+.navbar {
+    position: fixed;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    width: 100%;
+}
+.navbar-light a{
+    color: #F2C53D !important;
+}
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+a {
+    line-height: 12px;
+    font-size: 15px;
+    color: #F2C53D;
+}
+.myCarousel {
+    position: relative;
+}
+.navbar-brand {
+    line-height: 50px;
+ font-size: 40px;
+}
+h1 {
+    font-size: 40px;
+    color: #43AED9;
+}
+p {
+    font-size: 20px;
+    color: white;
+}
+form {
+    background-color: #D94929;
+}
+body {
+    background-color: #F2C53D;
+}
+.sign-up-button .btn {
+    background-color: #43AED9;
+    color: white;
+}
+.card {
+    background-color: transparent;
+}
+h5 {
+    color: #D94929;
+}
+.card-body .btn {
+    background-color: #43AED9;
+    color: white;
+}
+.page-footer a {
+    color: white;
+}
+h4 a {
+    color: #43AED9 !important;
+    font-size: 20px;
+}
+hr {
+    color: white;
+    background-color: white;
+}
+.footer-copyright {
+    color: white;
+}
+.jumbotron {
+    background: url("https://sparq.stanford.edu/sites/g/files/sbiybj11806/f/practice_reduces_prejudice.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.jumbotron .educate .jumbotron-fluid{
+    background: url("https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/fc/3034486-poster-p-1-hands-up-dont-shoot.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+h2 {
+    color: #D94929;
+}
+.founder h5 {
+    font-size: 30px;
+    color: #43AED9 !important;
+}
+.col-md-12 .btn {
+    background-color: #43AED9;
+    color: white;
+}
+.carousel-inner .product img {
+    height: 30px;
+    
+}
+h2 a {
+    color: #43AED9;
+    font-size: 25px;
+}
