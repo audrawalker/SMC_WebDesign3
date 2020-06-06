@@ -36,6 +36,10 @@ p {
     font-size: 20px;
     color: white;
 }
+p a{
+    font-size: 15px;
+    color: white;
+}
 form {
     background-color: #D94929;
 }
@@ -49,7 +53,12 @@ body {
 .card {
     background-color: transparent;
 }
+h5 a{
+    font-size: 23px;
+    color: #D94929;
+}
 h5 {
+
     color: #D94929;
 }
 .card-body .btn {
@@ -71,15 +80,7 @@ hr {
     color: white;
 }
 .jumbotron {
-    background: url("https://sparq.stanford.edu/sites/g/files/sbiybj11806/f/practice_reduces_prejudice.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-}
-.jumbotron .educate .jumbotron-fluid{
-    background: url("https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/fc/3034486-poster-p-1-hands-up-dont-shoot.jpg");
+    background: url("././assets/about.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
