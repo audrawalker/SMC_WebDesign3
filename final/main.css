@@ -1,84 +1,127 @@
-.navbar-toggler{
+.navbar-toggler {
     color: #F2C53D !important;
     border: 0px;
 }
+
+.cart {
+    color: #43AED9 !important;
+
+}
+
 .navbar {
     position: fixed;
 }
+
 nav {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
     width: 100%;
 }
-.navbar-light a{
+
+.navbar-light a {
     color: #F2C53D !important;
 }
+
 .bg-light {
     background-color: rgba(0, 0, 0, 0.6) !important;
 }
+
 a {
     line-height: 12px;
     font-size: 15px;
     color: #F2C53D;
 }
+
+span {
+
+    transition: all 1s ease;
+}
+
+span.fade {
+    color: #43AED9;
+}
+
+.fade:not(.show) {
+    opacity: 100;
+}
+
 .myCarousel {
     position: relative;
 }
-.navbar-brand {
-    line-height: 50px;
- font-size: 40px;
+a:hover {
+    color: white;
 }
+
+.navbar-brand {
+    
+    font-size: 40px;
+}
+
 h1 {
     font-size: 40px;
     color: #43AED9;
 }
+
 p {
     font-size: 20px;
     color: white;
 }
-p a{
+
+p a {
     font-size: 15px;
     color: white;
 }
+
 form {
     background-color: #D94929;
 }
+
 body {
     background-color: #F2C53D;
 }
+
 .sign-up-button .btn {
     background-color: #43AED9;
     color: white;
 }
+
 .card {
     background-color: transparent;
 }
-h5 a{
+
+h5 a {
     font-size: 23px;
     color: #D94929;
 }
+
 h5 {
 
     color: #D94929;
 }
+
 .card-body .btn {
     background-color: #43AED9;
     color: white;
 }
+
 .page-footer a {
     color: white;
 }
+
 h4 a {
     color: #43AED9 !important;
     font-size: 20px;
 }
+
 hr {
     color: white;
     background-color: white;
 }
+
 .footer-copyright {
     color: white;
 }
+
 .jumbotron {
     background: url("././assets/about.jpg");
     background-size: cover;
@@ -87,22 +130,129 @@ hr {
     height: 100%;
     background-repeat: no-repeat;
 }
+
 h2 {
     color: #D94929;
 }
+
 .founder h5 {
     font-size: 30px;
     color: #43AED9 !important;
 }
+
 .col-md-12 .btn {
     background-color: #43AED9;
     color: white;
 }
+
 .carousel-inner .product img {
     height: 30px;
-    
+
 }
+
 h2 a {
     color: #43AED9;
     font-size: 25px;
+}
+h3 {
+    color: white;
+}
+.checkout form {
+    padding: 30px;
+}
+
+.checkout label {
+    color: white;
+}
+
+.checkout .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.checkout .col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.checkout .col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+.checkout .col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.checkout .col-25,
+.checkout .col-50,
+.checkout .col-75 {
+    padding: 0 16px;
+}
+
+.checkout .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.checkout input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.checkout label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.checkout .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.checkout .btn {
+    background-color: #43AED9;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.checkout .btn:hover {
+    background-color: #43AED9;
+}
+
+.checkout span.price {
+    float: right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .checkout .row {
+        flex-direction: column-reverse;
+    }
+
+    .checkout .col-25 {
+        margin-bottom: 20px;
+    }
 }
